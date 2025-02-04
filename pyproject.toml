@@ -1,0 +1,15 @@
+[project]
+name = "papr"
+version = "0.1.0"
+
+dependencies = [
+    "nerfstudio >= 0.3.0",
+] 
+
+[tool.setuptools.packages.find]
+include = ["method_papr*"]
+
+# register the entry point of your new method here:
+[project.entry-points.'nerfstudio.method_configs']
+papr = 'method_papr.papr_config:method_papr'
+
