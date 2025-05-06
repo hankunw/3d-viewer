@@ -26,7 +26,7 @@ You must have an NVIDIA video card with CUDA installed on the system. Make sure 
 
 To create environmrnt with python virtual environment
 ```
-virtualenv --no-download py310
+python -m venv py310
 source py310/bin/activate
 pip install --upgrade pip
 ```
